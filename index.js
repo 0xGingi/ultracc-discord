@@ -20,7 +20,7 @@ async function updateStorageStatus() {
         let total = response.data.service_stats_info.total_storage_value;
 
         await client.user.setPresence({
-            activities: [{ name: `Storage: ${used}GB / ${total}GB`, type: ActivityType.Playing }],
+            activities: [{ name: `${used}GB / ${total}GB`, type: ActivityType.Playing }],
             status: 'online',
         });
     } catch (error) {
