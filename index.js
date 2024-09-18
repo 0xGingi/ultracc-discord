@@ -31,7 +31,7 @@ async function updateStorageStatus() {
 client.once('ready', async () => {
     console.log('Skeet Skeet');
     await updateStorageStatus();
-    setInterval(updateStorageStatus, 3600000);
+    setInterval(updateStorageStatus, 300000);
 });
 
 client.login(process.env.TOKEN);
