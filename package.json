@@ -4,11 +4,11 @@
     "description": " Ultra.cc Stats in Discord ",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
     "dependencies": {
-      "discord.js": "^14.15.3",
-      "dotenv": "^16.4.5",
-      "axios": "^1.7.2"
+        "discord.js": "^14.16.3",
+        "dotenv": "^16.4.7",
+        "axios": "^1.7.9"
     }
-  }
+}
