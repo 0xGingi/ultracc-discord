@@ -2,7 +2,7 @@
 
 ## Setup
 
-* Get Your API KEY
+* [Get Your API KEY and setup the endpoint](https://docs.ultra.cc/books/unofficial-utility-scripts/page/storagetraffic-api-endpoint)
 
 * Make a .env file with 
 ```
