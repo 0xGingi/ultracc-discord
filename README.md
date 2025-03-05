@@ -2,11 +2,11 @@
 
 ## Setup
 
-* [Get Your API KEY and setup the endpoint](https://docs.ultra.cc/books/unofficial-utility-scripts/page/storagetraffic-api-endpoint)
+* [Get Your API KEY and setup the endpoint](https://docs.ultra.cc/unofficial-ssh-utilities/storagetraffic-api-endpoint)
 
 * Make a .env file with 
 ```
-ULTRA_URL=https://username.server.usbx.me/ultra-api/get_stats
+ULTRA_URL=https://username.hostname.usbx.me/ultra-api/total-stats
 ULTRA_TOKEN=your_API_token
 TOKEN=Discord_Bot_Token
 ```
@@ -19,6 +19,5 @@ node index.js
 
 ## Docker
 ```
-docker pull 0xgingi/ultracc-docker:latest
-docker run -d --name ultra --restart=always -v /home/user/path-to-folder-with-env-file:/app/config 0xgingi/ultracc-docker:latest
+docker-compose up -d --build
 ```

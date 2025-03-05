@@ -16,11 +16,13 @@ async function updateStorageStatus() {
             'Authorization': 'Bearer ' + process.env.ULTRA_TOKEN
         };
         let response = await axios.get(process.env.ULTRA_URL, { headers });
+        
         let used = response.data.service_stats_info.used_storage_value;
         let total = response.data.service_stats_info.total_storage_value;
+        let usedUnit = response.data.service_stats_info.used_storage_unit;
 
         await client.user.setPresence({
-            activities: [{ name: `${used}GB / ${total}GB`, type: ActivityType.Playing }],
+            activities: [{ name: `${used}${usedUnit} / ${total}${usedUnit}`, type: ActivityType.Playing }],
             status: 'online',
         });
     } catch (error) {

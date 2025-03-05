@@ -1,0 +1,9 @@
+services:
+  ultra-bot:
+    build: .
+    container_name: ultra-bot
+    restart: always
+    volumes:
+      - ./config:/app/config
+    environment:
+      - NODE_ENV=production 
